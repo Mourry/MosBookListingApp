@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ScrollView"
+    tools:context="com.example.android.mosbooklistingapp.DetailsActivity">
+
+    <LinearLayout style="@style/LLV2">
+
+        <LinearLayout style="@style/LLH">
+
+            <!-- width & height of the ImageView are set in BookListAdapter.java,
+     the parameters in .xml are overridden -->
+            <ImageView
+                android:id="@+id/book_image_thumbnail"
+                style="@style/book_image_thumbnail"
+                tools:src="@drawable/image_placeholder" />
+
+            <LinearLayout style="@style/LLV3">
+        <TextView
+            android:id="@+id/book_title"
+            style="@style/book_title1" />
+
+        <TextView
+            android:id="@+id/book_authors"
+            style="@style/author" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/book_description"
+            style="@style/book_description"
+            tools:text="@string/book_description" />
+
+    </LinearLayout>
+
+</ScrollView>

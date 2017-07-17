@@ -1,0 +1,180 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Theme for Splash Screen theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <!-- Style for LinearLayouts. -->
+    <style name="LLV1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LLV2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LLV3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">@dimen/padding_1</item>
+    </style>
+
+    <style name="LLV4">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/padding_2</item>
+    </style>
+
+    <style name="LLH">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="LLVertical_search_query_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/padding_1</item>
+        <item name="android:background">@color/color_background_1</item>
+    </style>
+
+    <!-- Style for RelativeLayouts. -->
+    <style name="RL_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="RL_2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- Style for ScrollView. -->
+    <style name="ScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/padding_1</item>
+    </style>
+
+    <!-- Style for EditText. -->
+    <style name="EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/color_text_white</item>
+        <item name="android:minWidth">@dimen/min_width</item>
+    </style>
+
+    <!-- Style of the Button. -->
+    <style name="Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@color/color_of_button</item>
+        <item name="android:textColor">@color/color_text_white</item>
+        <item name="android:text">@string/search_button_text</item>
+    </style>
+
+    <!-- Style of TextViews. -->
+    <style name="Expand_search_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/padding_3</item>
+        <item name="android:textColor">@color/color_text_white</item>
+        <item name="android:text">@string/search_expand_view</item>
+    </style>
+
+    <style name="empty_state_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:text">@string/no_results_message</item>
+    </style>
+
+    <style name="book_title1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/card_text_size</item>
+        <item name="android:text">@string/book_title</item>
+    </style>
+
+    <style name="book_title2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/card_text_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="author">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/padding_2</item>
+        <item name="android:paddingBottom">@dimen/padding_2</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:text">@string/author_name</item>
+    </style>
+
+    <style name="author2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="book_description">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/padding_3</item>
+    </style>
+
+    <style name="book_description2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Style of ImageViews. -->
+    <style name="no_connection_image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="book_image_thumbnail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="book_image_thumbnail2">
+        <item name="android:layout_width">@dimen/width_of_book_image_thumbnail</item>
+        <item name="android:layout_height">@dimen/width_of_book_image_thumbnail</item>
+        <item name="android:padding">@dimen/padding_2</item>
+    </style>
+</resources>

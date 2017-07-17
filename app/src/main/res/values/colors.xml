@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#FF9800</color>
+    <color name="colorAccent">#FF9800</color>
+
+    <!-- Colors of Backgrounds for Layouts:-->
+    <color name="color_background_1">#FFE0B2</color>
+    <color name="color_background_2">#FFFFFF</color>
+
+    <!-- Colors of TextViews:-->
+    <color name="color_text_black">#000000</color>
+    <color name="color_text_white">#FFFFFF</color>
+
+    <!-- Colors of Buttons:-->
+    <color name="color_of_button">#FF9800</color>
+</resources>

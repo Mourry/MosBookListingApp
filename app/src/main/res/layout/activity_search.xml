@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LLV1"
+    tools:context="com.example.android.mosbooklistingapp.SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/search_query_view"
+        style="@style/LLVertical_search_query_view">
+
+        <LinearLayout
+            android:id="@+id/search_query_part_that_can_be_hidden"
+            style="@style/LLV1">
+
+            <EditText
+                android:id="@+id/search_query_title"
+                style="@style/EditText"
+                android:hint="@string/title_search_hint_text" />
+
+            <EditText
+                android:id="@+id/search_query_author"
+                style="@style/EditText"
+                android:hint="@string/author_search_hint_text" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_query_part_always_on_top"
+            style="@style/RL_1">
+
+            <TextView
+                android:id="@+id/spinner_side_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/search_results_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/spinner_side_text" />
+
+            <Button
+                android:id="@+id/search_button"
+                style="@style/Button" />
+
+            <TextView
+                android:id="@+id/expand_search_view"
+                style="@style/Expand_search_view" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout style="@style/RL_2">
+
+        <ListView
+            android:id="@+id/search_results"
+            style="@style/RL_1" />
+
+        <!-- Empty view is only visible when the list has no items. -->
+        <TextView
+            android:id="@+id/empty_state_text"
+            style="@style/empty_state_text" />
+
+        <!-- Image src is set in java; it is visible only if ListView is empty. -->
+        <ImageView
+            android:id="@+id/no_connection_image"
+            style="@style/no_connection_image" />
+
+        <!-- ProgressBar that shall be visible before query returns any result. -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
